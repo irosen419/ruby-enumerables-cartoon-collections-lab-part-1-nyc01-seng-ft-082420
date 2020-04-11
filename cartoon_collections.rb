@@ -11,6 +11,9 @@ def list_dwarves(array)
   # Print a numbered list of each element
   
   count = 1
-  array.each { |character| puts "#{count}. #{character}" count += 1 }
+  array.each do |character|
+    puts "#{count}. #{character}"
+    count += 1
+  end
   
 end
